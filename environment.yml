@@ -5,17 +5,18 @@ channels:
   - anaconda
   - defaults
 dependencies:
-  - python=3.7
+  - python=3.7.12
   - pip
   - tqdm
   - numpy
   - ipykernel
   - pandas
-  - pytorch=1.7.1
-  - torchvision=0.8.2
+  # - pytorch=1.7.1
+  - torch=1.13.0+cu117
+  - torchvision=0.8.2+cu117
   - cudatoolkit=10.1
   - pip:
-    - timm==0.6.12
+    - timm==1.0.7
     - tensorboard
     - opencv-python==4.4.0.46 
     - termcolor==1.1.0 

@@ -13,7 +13,7 @@ log_path="loghaha/${dataset}/${root}/${source}_${target}/${lr}"
 out_path="resultshaha/${dataset}/${root}/${source}_${target}/${lr}"
 
 python -m torch.distributed.launch --nproc_per_node ${GPUS} --master_port ${port} dist_pmTrans.py --use-checkpoint \
---source ${source} --target ${target} --dataset ${dataset}  --tag PM --local_rank 0 --batch-size 32 --head_lr_ratio 10 --log ${log_path} --output ${out_path} \
+--source ${source} --target ${target} --dataset ${dataset}  --tag PM --local_rank 0 --batch-size 32 --head_lr_ratio 10 --log_dir ${log_path} --output ${out_path} \
 --cfg ${cfg}
 
 
