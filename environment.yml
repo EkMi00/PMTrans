@@ -9,6 +9,8 @@ dependencies:
   - pip
   - tqdm
   - numpy
+  - ipykernel
+  - pandas
   - pytorch=1.7.1
   - torchvision=0.8.2
   - cudatoolkit=10.1
@@ -21,5 +23,4 @@ dependencies:
     - pillow==9.0.0
     - einops
     - six
-    - amp
     
