@@ -1,11 +1,5 @@
-# PMTrans
-Patch-Mix Transformer for Unsupervised Domain Adaptation: A Game Perspective
-
-### CVPR 2023 Highlight
-
-### There are some typos in results on the DomainNet dataset. And we revise these typos in the [newest version](https://arxiv.org/abs/2303.13434). Please check it.
-
-This is a rough version, I will continue to polish it.
+# Patch-Mix Transformer
+For Unsupervised Domain Adaptation: A Game Perspective
 
 ### Pretrained Swin-B
 
@@ -16,38 +10,15 @@ This is a rough version, I will continue to polish it.
 - Create a conda virtual environment and activate it:
 
 ```bash
-conda create -n swin python=3.7 -y
-conda activate swin
-```
-
-- Install `CUDA==10.1` with `cudnn7` following
-  the [official installation instructions](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)
-- Install `PyTorch==1.7.1` and `torchvision==0.8.2` with `CUDA==10.1`:
-
-```bash
-conda install pytorch==1.7.1 torchvision==0.8.2 cudatoolkit=10.1 -c pytorch
-```
-
-- Install `timm==0.3.2`:
-
-```bash
-pip install timm==0.3.2
-pip install tensorboard 
+conda env create -f environment.yml
 ```
 
 - Install `Apex`:
 
 ```bash
-git clone https://github.com/NVIDIA/apex
+git clone https://github.com/ptrblck/apex
 cd apex
 pip install -v --disable-pip-version-check --no-cache-dir ./
-https://github.com/NVIDIA/apex/issues/1227
-```
-
-- Install other requirements:
-
-```bash
-pip install opencv-python==4.4.0.46 termcolor==1.1.0 yacs==0.1.8
 ```
 
 ### Datasets:
@@ -65,6 +36,9 @@ pip install opencv-python==4.4.0.46 termcolor==1.1.0 yacs==0.1.8
   └── ...
   ```   
 
-### Training:
+https://github.com/jindongwang/transferlearning/blob/master/data/dataset.md
 
+### Training:
+```bash
 bash dist_train.sh
+```

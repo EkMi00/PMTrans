@@ -1,0 +1,25 @@
+name: swin
+channels:
+  - pytorch
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - python=3.7
+  - pip
+  - tqdm
+  - numpy
+  - pytorch=1.7.1
+  - torchvision=0.8.2
+  - cudatoolkit=10.1
+  - pip:
+    - timm==0.3.2 
+    - tensorboard
+    - opencv-python==4.4.0.46 
+    - termcolor==1.1.0 
+    - yacs==0.1.8 
+    - pillow==9.0.0
+    - einops
+    - six
+    - amp
+    
