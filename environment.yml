@@ -13,6 +13,7 @@ dependencies:
   - pandas
   # - pytorch=1.7.1
   - torch=1.13.0+cu117
+  # - torchvision=0.8.2
   - torchvision=0.8.2+cu117
   - cudatoolkit=10.1
   - pip:
