@@ -2,6 +2,8 @@
 
 conda env create -f environment.yml
 
+conda activate swin
+
 git clone https://github.com/ptrblck/apex
 cd apex
 pip install -v --disable-pip-version-check --no-cache-dir ./
